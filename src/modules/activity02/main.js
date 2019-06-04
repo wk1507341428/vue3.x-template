@@ -7,4 +7,4 @@ Vue.use(require('vue-wechat-title'))
 new Vue({
     router,
     render: h => h(App)
-}).$mount('#console')
+}).$mount('#activity02')

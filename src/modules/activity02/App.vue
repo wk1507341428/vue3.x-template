@@ -4,14 +4,14 @@
 * @date created in 2018-10-8 22:48
 */
 <template>
-    <div id="console" v-wechat-title="$route.meta.title">
+    <div id="activity02" v-wechat-title="$route.meta.title">
         <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-        name: "console"
+        name: "activity02"
     }
 </script>
 
