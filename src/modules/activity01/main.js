@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import Console from './Console.vue'
+import App from './App.vue'
 import router from './router'
 
 Vue.use(require('vue-wechat-title'))
 
 new Vue({
     router,
-    render: h => h(Console)
-}).$mount('#console')
+    render: h => h(App)
+}).$mount('#activity01')

@@ -1,10 +1,5 @@
-/**
-*
-* @author louie
-* @date created in 2018-10-9 10:41
-*/
 <template>
-    <div>this is console login</div>
+    <div>this is activity01 login</div>
 </template>
 
 <script>
