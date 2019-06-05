@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "test-serve": "vue-cli-service serve --mode test",
     "pro-serve": "vue-cli-service serve --mode production",
-    "build": "vue-cli-service build",
-    "dev-build": "vue-cli-service build --mode development",
-    "test-build": "vue-cli-service build --mode test"
+    "build": "vue-cli-service build --report",
+    "dev-build": "vue-cli-service build --mode development --report",
+    "test-build": "vue-cli-service build --mode test --report"
   },
   "dependencies": {
     "core-js": "^2.6.5",
