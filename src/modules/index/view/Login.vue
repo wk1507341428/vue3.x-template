@@ -1,5 +1,5 @@
 <template>
-    <div>this is activity01 login</div>
+    <div>这个是首页</div>
 </template>
 
 <script>
@@ -10,6 +10,6 @@
 
 <style lang="scss" scoped>
 div{
-    color: $theme;
+    color: yellow;
 }
 </style>

@@ -1,8 +1,3 @@
-/**
-*
-* @author louie
-* @date created in 2018-10-8 22:48
-*/
 <template>
     <div id="activity02" v-wechat-title="$route.meta.title">
         <router-view></router-view>
@@ -11,7 +6,11 @@
 
 <script>
     export default {
-        name: "activity02"
+        name: "activity02",
+        mounted(){
+            console.log(process.env.NODE_ENV)
+            console.log(process.env.VUE_APP_T)
+        }
     }
 </script>
 

@@ -5,12 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'login',
-    component: r => {
-        require(['./login/Login'], r)
-    },
+    name: 'home',
+    component: () => import('./view/Login'),
     meta: {
-        title: 'client 登录'
+        title: 'console 登录'
     }
 }]
 
