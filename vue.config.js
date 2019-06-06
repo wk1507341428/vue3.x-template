@@ -1,24 +1,22 @@
 const fs = require('fs')
 const path = require('path')
-
 const sassSource = fs.readFileSync('src/assets/styles/theme.scss','utf-8')
+const util = require('./src/assets/util')
+const env = util.env() // 获得环境变量
 
+console.log(">>>>>>>>",env)
 module.exports = {
     pages: {
         activity02: {
             // 应用入口配置，相当于单页面应用的main.js，必需项
             entry: 'src/modules/activity02/main.js',
-
             // 应用的模版，相当于单页面应用的public/index.html，可选项，省略时默认与模块名一致
             template: 'public/activity02/index.html',
-
             // 编译后在dist目录的输出文件名，可选项，省略时默认与模块名一致
             filename: 'activity02/index.html',
-
             // 标题，可选项，一般情况不使用，通常是在路由切换时设置title
             // 需要注意的是使用title属性template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
             title: 'activity02 page',
-
             chunks: ['chunk-vendors', 'chunk-common', 'activity02']
         },
         activity01: {
@@ -43,5 +41,8 @@ module.exports = {
                 data: sassSource
             }
         }
+    },
+    configureWebpack: (config)=>{
+        console.log(config.mode,env,"<<<<<")
     }
 }

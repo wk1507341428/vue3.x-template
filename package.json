@@ -6,14 +6,17 @@
     "serve": "vue-cli-service serve",
     "test-serve": "vue-cli-service serve --mode test",
     "pro-serve": "vue-cli-service serve --mode production",
+    "uat-serve": "vue-cli-service serve --mode uat",
     "build": "vue-cli-service build --report",
     "dev-build": "vue-cli-service build --mode development --report",
-    "test-build": "vue-cli-service build --mode test --report"
+    "test-build": "vue-cli-service build --mode test --report",
+    "uat-build": "vue-cli-service build --mode uat --report"
   },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-router": "^3.0.3",
+    "vue-wechat-title": "^2.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
