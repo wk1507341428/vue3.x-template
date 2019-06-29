@@ -6,7 +6,8 @@ module.exports = {
           'es6.promise',
           'es6.symbol',
           'es6.string.includes',
-          'es7.array.includes'
+          'es7.array.includes',
+          'es6.object.assign'
         ]
       }]
     ]
