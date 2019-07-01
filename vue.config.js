@@ -44,5 +44,8 @@ module.exports = {
     },
     configureWebpack: (config)=>{
         console.log(config.mode,env,"<<<<<")
+        config.externals = {
+            'vue': 'Vue'
+        }
     }
 }
